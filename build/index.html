@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/styles-ie9.css">
     <![endif]-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 </head>
 <body>
 <header class="navigation">
@@ -30,17 +29,42 @@
 
             </div>
             <div class="logos__sheet__headers">
-                <div class="logos__hamburger hersh menu">
-                    <a href="" class="menu-btn">
-                        <img src="img/hamburger.svg" alt="hamburger"></a>
-                </div>
-                <div class="logos__shopping herth">
-                    <a href="" target="_blank">
-                        <img src="img/shoping.svg" alt="shoping">
-                    </a>
-                    <div id="zindex"><p>0</p></div>
-                </div>
+                    <div id="app">
+                        <div @click="activate" id="mySidebar" class="sidebar">
+                            <a href="#">Catalog</a>
+                            <a href="#">Catalog</a>
+                            <a href="#">Catalog</a>
+                            <a href="#">Catalog</a>
+                            <a href="#">Catalog</a>
+                            <a href="#">Catalog</a>
+
+                        </div>
+                        <div id="main">
+                            <div @click="activate" target="nav-collapse" class="hamburgerButton">
+                                <div v-bind:class="{active: isActive}" class="hamburger bar1"></div>
+                                <div v-bind:class="{active: isActive}" class="hamburger bar2"></div>
+                                <div v-bind:class="{active: isActive}" class="hamburger bar3"></div>
+                            </div>
+                        </div>
+                        <div @click="activates" id="myShopings" class="shoopers">
+                            <a href="#">Shopify</a>
+                            <a href="#">Shopify</a>
+                            <a href="#">Shopify</a>
+                            <a href="#">Shopify</a>
+                            <a href="#">Shopify</a>
+                            <a href="#">Shopify</a>
+                        </div>
+                        <div id="main__shoop">
+                            <div @click="activates"  target="nav-collapse" class="logos__shopping herth">
+                                <div v-bind:class="{active: isActive}" class="scoping ">
+                                    <img src="img/shoping.svg" alt="shoping">
+                                </div>
+                                <div id="zindex"><p>0</p></div>
+                            </div>
+                        </div>
+                    </div>
             </div>
+
         </div>
 
     </div>
@@ -83,46 +107,46 @@
             </div>
         </div>
         <div class="content__production">
-            <div class="item__one prod" onClick="document.location='production.html'">
+            <div class="item__prod prod" onClick="document.location='production.html'">
                 <div class="item__production">
                     <a href="production.html" target="_blank">Potato Chips</a>
                 </div>
                 <div class="item__img"><img src="img/catalog1.png" alt="catalog"></div>
             </div>
-            <div class="item__two prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="item__production">
                     <a href="" target="_blank">Cold Drinks for One</a>
                 </div>
                 <div class="item__img"><img src="img/catalog5.png" alt="catalog"></div>
             </div>
-            <div class="item__three prod " onClick="document.location='#'">
+            <div class="item__prod prod " onClick="document.location='#'">
                 <div class="item__production">
                     <a href="" target="_blank">Cold Drinks Energy</a>
                 </div>
                 <div class="item__img"><img src="img/catalog2.png" alt="catalog"></div>
             </div>
-            <div class="item__four prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="item__production">
                     <a href="" target="_blank">Cold Drinks to Share</a>
                 </div>
                 <div class="item__img"><img src="img/catalog6.png" alt="catalog"></div>
             </div>
 
-            <div class="item__five prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="item__production">
                     <a href="" target="_blank">Ice Cream</a>
                 </div>
                 <div class="item__img"><img src="img/catalog3.png" alt="catalog"></div>
             </div>
-            <div class="item__six prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="item__production"><a href="" target="_blank">Chocolate</a></div>
                 <div class="item__img"><img src="img/catalog7.png" alt="catalog"></div>
             </div>
-            <div class="item__seven prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="item__production"><a href="" target="_blank">Hot Food</a></div>
                 <div class="item__img"><img src="img/catalog4.png" alt="catalog"></div>
             </div>
-            <div class="item__eight prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="item__production"><a href="" target="_blank">Groceries</a></div>
                 <div class="item__img"><img src="img/catalog8.png" alt="catalog"></div>
             </div>
@@ -178,9 +202,9 @@
         </div>
 
     </div>
+
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>
 </html>

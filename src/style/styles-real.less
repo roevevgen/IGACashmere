@@ -1,3 +1,4 @@
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
 
 :root {
   --main-bl: #000000;
@@ -117,18 +118,6 @@ body {
 	margin-right: 6px;
   }
 
-  .herth {
-	padding: 20px 12px;
-	background-color: var(--main-red);
-	#zindex{
-	  position: relative;
-	  z-index: 9999;
-	  font-size: 0.875rem;
-	  color: var(--main-red);
-	  top: -40px;
-	  left: 24px;
-	}
-  }
 
   .hersh__2 {
 	background-color: var(--main-red);
@@ -148,7 +137,12 @@ body {
 	}
   }
 }
-@import "burger";
+#app{
+  display: flex;
+  flex-direction: row;
+}
+@import "layout/burger";
+@import "layout/shoop";
 .slider {
   margin-top: 16px;
   background: url(../img/header.png) no-repeat;
@@ -214,7 +208,8 @@ body {
 
 .content__product {
   margin-top: 70px;
-  .row-flex();
+  .col-padding();
+  display: flex;
   flex-direction: row;
   .md-block({
 	display: flex;
@@ -342,7 +337,11 @@ body {
 .content__production {
   margin-top: 5px;
   margin-bottom: 74px;
-  .row-flex();
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 6px;
+  .sm-block({grid-template-columns: 1fr});
 
   .items {
 	.col();
@@ -478,14 +477,13 @@ body {
 	}
   }
 
-  .item__one, .item__two, .item__three, .item__four, .item__five, .item__six, .item__seven, .item__eight, .item__nine,
-  .item__ten, .item__eleven, .item__twelve {
+  .item__prod {
 	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
 	border: solid 1px #e2e2e2;
 	margin-top: 7px;
-	.size(6);
+	.size(12);
 	.size-md(12);
-	.size-sm(10);
+	.size-sm(12);
 	.size-xs(12);
 	display: flex;
 	justify-content: space-between;

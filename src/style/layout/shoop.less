@@ -1,0 +1,108 @@
+
+.shoopers {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-size: 1.875rem;
+  color:var(--main-bl);
+  background-color: var(--main-white);
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.875rem;
+    color: #333948;   //text color
+    display: block;
+    transition: 0.2s;
+    &:hover {
+      color: var(--main-blue);
+    }
+  }
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: var(--main-bl);
+  color: var(--main-white);
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+.herth {
+  cursor:pointer;
+  padding: 20px 12px;
+  background-color: var(--main-red);
+  #zindex{
+    position: relative;
+    z-index: 9999;
+    font-size: 0.875rem;
+    color: var(--main-red);
+    top: -40px;
+    left: 24px;
+  }
+}
+
+//#main__shoop {
+//  transition: margin-left .5s;
+//  padding: 37px 6px;
+//  //margin:0;
+//  //margin:auto;
+//  background-color: var(--main-red);
+//  cursor:pointer;
+//  width: 63px;
+//  height: 28px;
+//  margin-right: 6px;
+//}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .shoopers {padding-top: 15px;}
+  .shoopers a {font-size: 18px;}
+}
+
+
+//.bar1, .bar2, .bar3{
+//  display: flex;
+//  font-size: 10px;
+//  padding: 0;
+//  position:absolute;
+//  -webkit-appearance: none;
+//  width: 40px;
+//  height: 4px;
+//  border-radius: 7px;
+//  background-color: white;
+//  -webkit-transition: all 0.2s ease-in;
+//  -webkit-transform: rotate(0deg);
+//  color:white;
+//}
+//
+//.bar2{
+//  top:10px;
+//}
+//.bar3{
+//  top:20px;
+//}
+
+

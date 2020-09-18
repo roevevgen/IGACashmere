@@ -30,15 +30,39 @@
 
             </div>
             <div class="logos__sheet__headers">
-                <div class="logos__hamburger hersh menu">
-                    <a href="" class="menu-btn">
-                        <img src="img/hamburger.svg" alt="hamburger"></a>
-                </div>
-                <div class="logos__shopping herth">
-                    <a href="" target="_blank">
-                        <img src="img/shoping.svg" alt="shoping">
-                    </a>
-                    <div id="zindex"><p>0</p></div>
+                <div id="app">
+                    <div @click="activate" id="mySidebar" class="sidebar">
+                        <a href="#">Catalog</a>
+                        <a href="#">Catalog</a>
+                        <a href="#">Catalog</a>
+                        <a href="#">Catalog</a>
+                        <a href="#">Catalog</a>
+                        <a href="#">Catalog</a>
+
+                    </div>
+                    <div id="main">
+                        <div @click="activate" target="nav-collapse" class="hamburgerButton">
+                            <div v-bind:class="{active: isActive}" class="hamburger bar1"></div>
+                            <div v-bind:class="{active: isActive}" class="hamburger bar2"></div>
+                            <div v-bind:class="{active: isActive}" class="hamburger bar3"></div>
+                        </div>
+                    </div>
+                    <div @click="activates" id="myShopings" class="shoopers">
+                        <a href="#">Shopify</a>
+                        <a href="#">Shopify</a>
+                        <a href="#">Shopify</a>
+                        <a href="#">Shopify</a>
+                        <a href="#">Shopify</a>
+                        <a href="#">Shopify</a>
+                    </div>
+                    <div id="main__shoop">
+                        <div @click="activates"  target="nav-collapse" class="logos__shopping herth">
+                            <div v-bind:class="{active: isActive}" class="scoping ">
+                                <img src="img/shoping.svg" alt="shoping">
+                            </div>
+                            <div id="zindex"><p>0</p></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,7 +110,7 @@
             </div>
         </div>
         <div class="content__production">
-            <div class="item__one prod" onClick="document.location='product.html'">
+            <div class="item__prod prod" onClick="document.location='product.html'">
                 <div class="prod__product items">
                     <div class="product__chips prom">
                         <a href="product.html" target="_blank">French Fries Original 175g</a>
@@ -107,7 +131,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item__two prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="prod__product items">
                     <div class="product__chips prom">
                         <a href="product.html" target="_blank">Samboy Chips BBQ 175g</a>
@@ -130,7 +154,7 @@
                 </div>
 
             </div>
-            <div class="item__three prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="prod__product items">
                     <div class="product__chips prom">
                         <a href="product.html" target="_blank">Samboy Chips Tomato 175g</a>
@@ -150,7 +174,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item__four prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="prod__product items">
                     <div class="product__chips prom">
                         <a href="product.html" target="_blank">Samboy Chips Chicken 175g</a>
@@ -171,7 +195,7 @@
                 </div>
             </div>
 
-            <div class="item__five prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="prod__product items">
                     <div class="product__chips prom">
                         <a href="product.html" target="_blank">Samboy Chips Salt & Vinegar 175g</a>
@@ -191,7 +215,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item__six prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="prod__product items">
                     <div class="product__chips prom">
                         <a href="product.html" target="_blank">Thins Chips Original 175g</a>
@@ -211,7 +235,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item__seven prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="prod__product items">
                     <div class="product__chips prom">
                         <a href="product.html" target="_blank">Thins Chips Salt & Vinegar 175g</a>
@@ -231,7 +255,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item__eight prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="prod__product items">
                     <div class="product__chips prom">
                         <a href="product.html" target="_blank">Thins Chips Light & Tangy 175g</a>
@@ -251,7 +275,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item__nine prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="prod__product items">
                     <div class="product__chips prom">
                         <a href="product.html" target="_blank">Thins Chips Cheese & Onion 175g</a>
@@ -271,7 +295,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item__ten prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="prod__product items">
                     <div class="product__chips prom">
                         <a href="product.html" target="_blank">Thins Chips Chicken 175g</a>
@@ -291,7 +315,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item__eleven prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="prod__product items">
                     <div class="product__chips prom">
                         <a href="product.html" target="_blank">Thins Chips Sour Cream & Chives 175g</a>
@@ -311,7 +335,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item__twelve prod" onClick="document.location='#'">
+            <div class="item__prod prod" onClick="document.location='#'">
                 <div class="prod__product items">
                     <div class="product__chips prom">
                         <a href="product.html" target="_blank">Cheezels Party Bag 190g</a>
@@ -385,5 +409,7 @@
     </div>
 
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>
