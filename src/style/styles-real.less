@@ -29,7 +29,6 @@ body {
 	justify-content: space-between;
 	align-content: stretch;
 	.m-block({
-	  justify-content: space-between
 	});
 
 	.logos__header {
@@ -149,8 +148,7 @@ body {
 	}
   }
 }
-
-
+@import "burger";
 .slider {
   margin-top: 16px;
   background: url(../img/header.png) no-repeat;
@@ -342,8 +340,8 @@ body {
 }
 
 .content__production {
-  margin-top: 23px;
-  margin-bottom: 94px;
+  margin-top: 5px;
+  margin-bottom: 74px;
   .row-flex();
 
   .items {
@@ -358,14 +356,14 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	.md-block({
-	  flex-direction: column;
+	  flex-direction: column-reverse;
 	  justify-content: center;
 	  align-items: center
 	});
 
 	.prom {
 	  .col();
-	  .size(7);
+	  .size(6.7);
 	  margin-top: 41px;
 	  margin-bottom: 41px;
 	  .md-block({
@@ -390,6 +388,7 @@ body {
 
 	  .buttons__dev {
 		margin-bottom: 17px;
+		margin-left: 15px;
 
 		p {
 		  font-size: 1.875rem;
@@ -440,19 +439,20 @@ body {
 	.size-m(12);
 	.m-block({
 	  display: flex;
-	  flex-direction: column;
+	  flex-direction: column-reverse;
+	  align-items: center;
 	  justify-content: center;
 	});
 	.md-block({
 	  display: flex;
-	  flex-direction: column;
+	  flex-direction: column-reverse;
 	  justify-content: center;
 	  width: 100vh
 	});
 	.size-md(12);
 
 	&:nth-child(2n+1) {
-	  margin-right: 7px;
+	  margin-right: -14px;
 
 	}
 
@@ -483,7 +483,6 @@ body {
 	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
 	border: solid 1px #e2e2e2;
 	margin-top: 7px;
-	.col();
 	.size(6);
 	.size-md(12);
 	.size-sm(10);
@@ -493,13 +492,15 @@ body {
 	align-items: center;
 
 	&:hover {
-	  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
-	  border: 7px hidden #e2e2e2;
+	  box-shadow: 0 0 -6px 0 rgba(0, 0, 0, 0.1);
+	  border: solid 7px #e2e2e2;
+	  cursor:pointer;
 	}
 
 	.item__production {
-	  padding-top: 54px;
-	  padding-left: 66px;
+	  padding-top: 46px;
+	  padding-left: 0;
+	  padding-bottom: 12px;
 	}
   }
 }

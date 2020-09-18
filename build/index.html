@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/styles-ie9.css">
     <![endif]-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 </head>
 <body>
 <header class="navigation">
@@ -29,8 +30,8 @@
 
             </div>
             <div class="logos__sheet__headers">
-                <div class="logos__hamburger hersh">
-                    <a href="" target="_blank">
+                <div class="logos__hamburger hersh menu">
+                    <a href="" class="menu-btn">
                         <img src="img/hamburger.svg" alt="hamburger"></a>
                 </div>
                 <div class="logos__shopping herth">
@@ -82,46 +83,46 @@
             </div>
         </div>
         <div class="content__production">
-            <div class="item__one prod">
+            <div class="item__one prod" onClick="document.location='production.html'">
                 <div class="item__production">
                     <a href="production.html" target="_blank">Potato Chips</a>
                 </div>
                 <div class="item__img"><img src="img/catalog1.png" alt="catalog"></div>
             </div>
-            <div class="item__two prod">
+            <div class="item__two prod" onClick="document.location='#'">
                 <div class="item__production">
                     <a href="" target="_blank">Cold Drinks for One</a>
                 </div>
                 <div class="item__img"><img src="img/catalog5.png" alt="catalog"></div>
             </div>
-            <div class="item__three prod">
+            <div class="item__three prod " onClick="document.location='#'">
                 <div class="item__production">
                     <a href="" target="_blank">Cold Drinks Energy</a>
                 </div>
                 <div class="item__img"><img src="img/catalog2.png" alt="catalog"></div>
             </div>
-            <div class="item__four prod">
+            <div class="item__four prod" onClick="document.location='#'">
                 <div class="item__production">
                     <a href="" target="_blank">Cold Drinks to Share</a>
                 </div>
                 <div class="item__img"><img src="img/catalog6.png" alt="catalog"></div>
             </div>
 
-            <div class="item__five prod">
+            <div class="item__five prod" onClick="document.location='#'">
                 <div class="item__production">
                     <a href="" target="_blank">Ice Cream</a>
                 </div>
                 <div class="item__img"><img src="img/catalog3.png" alt="catalog"></div>
             </div>
-            <div class="item__six prod">
+            <div class="item__six prod" onClick="document.location='#'">
                 <div class="item__production"><a href="" target="_blank">Chocolate</a></div>
                 <div class="item__img"><img src="img/catalog7.png" alt="catalog"></div>
             </div>
-            <div class="item__seven prod">
+            <div class="item__seven prod" onClick="document.location='#'">
                 <div class="item__production"><a href="" target="_blank">Hot Food</a></div>
                 <div class="item__img"><img src="img/catalog4.png" alt="catalog"></div>
             </div>
-            <div class="item__eight prod">
+            <div class="item__eight prod" onClick="document.location='#'">
                 <div class="item__production"><a href="" target="_blank">Groceries</a></div>
                 <div class="item__img"><img src="img/catalog8.png" alt="catalog"></div>
             </div>
@@ -178,5 +179,8 @@
 
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>
