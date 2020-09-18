@@ -14,7 +14,7 @@ var vm = new Vue({
             this.isActive = !this.isActive;
             if (this.isActive)
             {
-                document.getElementById("mySidebar").style.width = "400px";
+                document.getElementById("mySidebar").style.width = "320px";
                 document.getElementById("main").style.marginLeft = "1px";
             }
 
@@ -30,7 +30,7 @@ var vm = new Vue({
             this.isActivatus = !this.isActivatus;
             if (this.isActivatus)
             {
-                document.getElementById("myShopings").style.width = "400px";
+                document.getElementById("myShopings").style.width = "320px";
                 document.getElementById("main__shoop").style.marginLeft = "1px";
             }
 
