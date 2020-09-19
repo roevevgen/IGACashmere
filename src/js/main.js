@@ -44,3 +44,45 @@ var vm = new Vue({
     }
 
 });
+var vm = new Vue({
+    el: '#app2',
+    data: {
+        isActive: false,
+        isActivatus:false,
+    },
+    methods: {
+        activate()
+        {
+            this.isActive = !this.isActive;
+            if (this.isActive)
+            {
+                document.getElementById("mySidebar2").style.width = "320px";
+                document.getElementById("main2").style.marginLeft = "1px";
+            }
+
+            else
+            {
+                document.getElementById("mySidebar2").style.width = "0px";
+                document.getElementById("main2").style.marginLeft = "0px";
+            }
+
+        },
+        activates()
+        {
+            this.isActivatus = !this.isActivatus;
+            if (this.isActivatus)
+            {
+                document.getElementById("myShopings2").style.width = "320px";
+                document.getElementById("main__shoop2").style.marginLeft = "1px";
+            }
+
+            else
+            {
+                document.getElementById("myShopings2").style.width = "0px";
+                document.getElementById("main__shoop2").style.marginLeft = "0px";
+            }
+
+        }
+    }
+
+});

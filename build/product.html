@@ -143,16 +143,38 @@
                 <a href="index.html" target="_blank"><img src="img/logo2.svg" alt="logo"></a>
             </div>
             <div class="logos__sheet__headers">
-                <div class="logos__hamburger hersh__2">
-                    <a href="" target="_blank">
-                        <img src="img/hamburger2.svg" alt="hamburger"></a>
-                </div>
-                <div class="logos__shopping herth__2">
-                    <a href="" target="_blank">
-                        <img src="img/shoping2.svg" alt="shoping">
-                    </a>
-                    <div id="zindex_1"><p>0</p></div>
-
+                <div id="app2">
+                    <div @click="activate" id="mySidebar2" class="sidebar__2">
+                        <a href="#">Catalog</a>
+                        <a href="#">Catalog</a>
+                        <a href="#">Catalog</a>
+                        <a href="#">Catalog</a>
+                        <a href="#">Catalog</a>
+                        <a href="#">Catalog</a>
+                    </div>
+                    <div id="main2">
+                        <div @click="activate" target="nav-collapse" class="hamburgerButton">
+                            <div v-bind:class="{active: isActive}" class="hamburger__1 bar1__1"></div>
+                            <div v-bind:class="{active: isActive}" class="hamburger__1 bar2__2"></div>
+                            <div v-bind:class="{active: isActive}" class="hamburger__1 bar3__3"></div>
+                        </div>
+                    </div>
+                    <div @click="activates" id="myShopings2" class="shoopers__2">
+                        <a href="#">Shopify</a>
+                        <a href="#">Shopify</a>
+                        <a href="#">Shopify</a>
+                        <a href="#">Shopify</a>
+                        <a href="#">Shopify</a>
+                        <a href="#">Shopify</a>
+                    </div>
+                    <div id="main__shoop2">
+                        <div @click="activates"  target="nav-collapse" class="logos__shopping herth__2">
+                            <div v-bind:class="{active: isActive}" class="scoping ">
+                                <img src="img/shoping2.svg" alt="shoping">
+                            </div>
+                            <div id="zindex__1"><p>0</p></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
