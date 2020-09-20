@@ -255,6 +255,7 @@ body {
 	margin-bottom: 60px;
 	.md-block({
 	  margin-bottom: 20px;
+	  display: flex;justify-content: center;
 	})
   }
 
@@ -274,6 +275,7 @@ body {
 		font-size: 1.875rem;
 		font-weight: bold;
 		line-height: 2.6;
+		.xxs-block({font-size: 1.5rem});
 	  }
 
 	  p {
@@ -492,6 +494,7 @@ body {
 	  padding-left: 0;
 	  padding-bottom: 12px;
 	  margin-left: 66px;
+	  .m-block({margin-left: 6px});
 	}
   }
 }
@@ -509,11 +512,12 @@ body {
 	justify-content: space-between;
 	padding-top: 30px;
 	padding-bottom: 41px;
-
+	.md-block({flex-direction: column;justify-content: center;align-content: center});
 	.contacts__contacted {
 	  display: flex;
 	  flex-direction: column;
-
+	  .size(12);
+	  .md-block({justify-content: center; align-items: center});
 	  .contacted__us, .contacted__sites {
 		p {
 		  color: var(--main-white);
@@ -535,7 +539,9 @@ body {
 	  .contacted__sites {
 		padding-top: 43px;
 		max-width: 300px;
-
+		.md-block({display: flex;justify-content: center});
+		.size(12);
+		.size-md(8);
 		p {
 		  font-size: 14px;
 		}
@@ -554,13 +560,16 @@ body {
 	  display: flex;
 	  flex-direction: column;
 	  align-self: flex-start;
-
+	  .size(6);
+	  .size-md(8);
+	  .md-block({align-self:center;});
 	  p {
 		color: var(--main-white);
 	  }
 
 	  .payment__megapay {
-
+		.md-block({
+		  display:flex; justify-content: center; margin-top: 18px;});
 		p {
 		  color: var(--main-white);
 		  font-weight: bold;
@@ -570,6 +579,19 @@ body {
 
 	  .payment__google {
 		padding-top: 26px;
+		.md-block({display: flex;
+		  justify-content: center;});
+		.xxs-block({flex-direction: column; align-items: center});
+		a{
+		  padding-right: 6px;
+		}
+
+	  }
+	  .payment__mega{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		.md-block({justify-content: center});
 	  }
 	}
   }
