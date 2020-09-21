@@ -31,12 +31,24 @@
             <div class="logos__sheet__headers">
                 <div id="app">
                     <div @click="activate" id="mySidebar" class="sidebar">
-                        <a href="#">Catalog</a>
-                        <a href="#">Catalog</a>
-                        <a href="#">Catalog</a>
-                        <a href="#">Catalog</a>
-                        <a href="#">Catalog</a>
-                        <a href="#">Catalog</a>
+                        <a v-bind:href="href1">
+                            {{ links1 }}
+                        </a>
+                        <a v-bind:href="href2">
+                            {{ links2 }}
+                        </a>
+                        <a v-bind:href="href3">
+                            {{ links3 }}
+                        </a>
+                        <a v-bind:href="href4">
+                            {{ links4 }}
+                        </a>
+                        <a v-bind:href="href5">
+                            {{ links5 }}
+                        </a>
+                        <a v-bind:href="href6">
+                            {{ links6 }}
+                        </a>
 
                     </div>
                     <div id="main">
@@ -47,12 +59,9 @@
                         </div>
                     </div>
                     <div @click="activates" id="myShopings" class="shoopers">
-                        <a href="#">Shopify</a>
-                        <a href="#">Shopify</a>
-                        <a href="#">Shopify</a>
-                        <a href="#">Shopify</a>
-                        <a href="#">Shopify</a>
-                        <a href="#">Shopify</a>
+
+                        <p>{{shop}}</p>
+
                     </div>
                     <div id="main__shoop">
                         <div @click="activates" target="nav-collapse" class="logos__shopping herth">
@@ -164,12 +173,24 @@
             <div class="logos__sheet__headers">
                 <div id="app2">
                     <div @click="activate" id="mySidebar2" class="sidebar__2">
-                        <a href="#">Catalog</a>
-                        <a href="#">Catalog</a>
-                        <a href="#">Catalog</a>
-                        <a href="#">Catalog</a>
-                        <a href="#">Catalog</a>
-                        <a href="#">Catalog</a>
+                        <a v-bind:href="href1">
+                            {{ links1 }}
+                        </a>
+                        <a v-bind:href="href2">
+                            {{ links2 }}
+                        </a>
+                        <a v-bind:href="href3">
+                            {{ links3 }}
+                        </a>
+                        <a v-bind:href="href4">
+                            {{ links4 }}
+                        </a>
+                        <a v-bind:href="href5">
+                            {{ links5 }}
+                        </a>
+                        <a v-bind:href="href6">
+                            {{ links6 }}
+                        </a>
                     </div>
                     <div id="main2">
                         <div @click="activate" target="nav-collapse" class="hamburgerButton">
@@ -179,12 +200,7 @@
                         </div>
                     </div>
                     <div @click="activates" id="myShopings2" class="shoopers__2">
-                        <a href="#">Shopify</a>
-                        <a href="#">Shopify</a>
-                        <a href="#">Shopify</a>
-                        <a href="#">Shopify</a>
-                        <a href="#">Shopify</a>
-                        <a href="#">Shopify</a>
+                        <p>{{shop}}</p>
                     </div>
                     <div id="main__shoop2">
                         <div @click="activates" target="nav-collapse" class="logos__shopping herth__2">
