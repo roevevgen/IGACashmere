@@ -7,8 +7,14 @@ module.exports = {
         fields: "81px"
     },
     breakPoints: {
+        ml:{
+            width:"1580"
+        },
         m: {
             width: "1456px"
+        },
+        mk:{
+            width:"1200px"
         },
         md: {
             width: "920px",
@@ -19,6 +25,9 @@ module.exports = {
         },
         xs: {
             width: "576px"
+        },
+        xls:{
+            width: "490px"
         },
         xxs: {
             width: "420px",

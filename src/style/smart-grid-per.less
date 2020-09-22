@@ -1,26 +1,35 @@
 @columns: 12;
 @atom: (100% / @columns);
 
+@break_ml: 1580;
 @break_m: 1456px;
+@break_mk: 1200px;
 @break_md: 920px;
 @break_sm: 740px;
 @break_xs: 576px;
+@break_xls: 490px;
 @break_xxs: 420px;
 @break_xxxs: 320px;
 
 @offset: 3.1%;
+@offset_ml: @offset;
 @offset_m: @offset;
+@offset_mk: @offset;
 @offset_md: @offset;
 @offset_sm: @offset;
 @offset_xs: @offset;
+@offset_xls: @offset;
 @offset_xxs: @offset;
 @offset_xxxs: @offset;
 
 @offset_one_side: (@offset / 2);
+@offset_ml_one_side: (@offset_ml / 2);
 @offset_m_one_side: (@offset_m / 2);
+@offset_mk_one_side: (@offset_mk / 2);
 @offset_md_one_side: (@offset_md / 2);
 @offset_sm_one_side: (@offset_sm / 2);
 @offset_xs_one_side: (@offset_xs / 2);
+@offset_xls_one_side: (@offset_xls / 2);
 @offset_xxs_one_side: (@offset_xxs / 2);
 @offset_xxxs_one_side: (@offset_xxxs / 2);
 
@@ -92,8 +101,16 @@
     width: @atom * @n - @offset;
 }
 
+.size-ml(@n){
+    .ml(width, @atom * @n - @offset_ml);
+}
+
 .size-m(@n){
     .m(width, @atom * @n - @offset_m);
+}
+
+.size-mk(@n){
+    .mk(width, @atom * @n - @offset_mk);
 }
 
 .size-md(@n){
@@ -106,6 +123,10 @@
 
 .size-xs(@n){
     .xs(width, @atom * @n - @offset_xs);
+}
+
+.size-xls(@n){
+    .xls(width, @atom * @n - @offset_xls);
 }
 
 .size-xxs(@n){
@@ -142,6 +163,32 @@
     padding-right: @atom * @n + @offset_one_side;
 }
 
+.shift-ml(@n){
+    .ml(margin-left, @atom * @n + @offset_ml_one_side);
+    .ml(margin-right, @atom * @n + @offset_ml_one_side);
+}
+
+.shift-ml-left(@n){
+    .ml(margin-left, @atom * @n + @offset_ml_one_side);
+}
+
+.shift-ml-right(@n){
+    .ml(margin-right, @atom * @n + @offset_ml_one_side);
+}
+
+.shift-ml-padding(@n){
+    .ml(padding-left, @atom * @n + @offset_ml_one_side);
+    .ml(padding-right, @atom * @n + @offset_ml_one_side);
+}
+
+.shift-ml-padding-left(@n){
+    .ml(padding-left, @atom * @n + @offset_ml_one_side);
+}
+
+.shift-ml-padding-right(@n){
+    .ml(padding-right, @atom * @n + @offset_ml_one_side);
+}
+
 .shift-m(@n){
     .m(margin-left, @atom * @n + @offset_m_one_side);
     .m(margin-right, @atom * @n + @offset_m_one_side);
@@ -166,6 +213,32 @@
 
 .shift-m-padding-right(@n){
     .m(padding-right, @atom * @n + @offset_m_one_side);
+}
+
+.shift-mk(@n){
+    .mk(margin-left, @atom * @n + @offset_mk_one_side);
+    .mk(margin-right, @atom * @n + @offset_mk_one_side);
+}
+
+.shift-mk-left(@n){
+    .mk(margin-left, @atom * @n + @offset_mk_one_side);
+}
+
+.shift-mk-right(@n){
+    .mk(margin-right, @atom * @n + @offset_mk_one_side);
+}
+
+.shift-mk-padding(@n){
+    .mk(padding-left, @atom * @n + @offset_mk_one_side);
+    .mk(padding-right, @atom * @n + @offset_mk_one_side);
+}
+
+.shift-mk-padding-left(@n){
+    .mk(padding-left, @atom * @n + @offset_mk_one_side);
+}
+
+.shift-mk-padding-right(@n){
+    .mk(padding-right, @atom * @n + @offset_mk_one_side);
 }
 
 .shift-md(@n){
@@ -246,6 +319,32 @@
     .xs(padding-right, @atom * @n + @offset_xs_one_side);
 }
 
+.shift-xls(@n){
+    .xls(margin-left, @atom * @n + @offset_xls_one_side);
+    .xls(margin-right, @atom * @n + @offset_xls_one_side);
+}
+
+.shift-xls-left(@n){
+    .xls(margin-left, @atom * @n + @offset_xls_one_side);
+}
+
+.shift-xls-right(@n){
+    .xls(margin-right, @atom * @n + @offset_xls_one_side);
+}
+
+.shift-xls-padding(@n){
+    .xls(padding-left, @atom * @n + @offset_xls_one_side);
+    .xls(padding-right, @atom * @n + @offset_xls_one_side);
+}
+
+.shift-xls-padding-left(@n){
+    .xls(padding-left, @atom * @n + @offset_xls_one_side);
+}
+
+.shift-xls-padding-right(@n){
+    .xls(padding-right, @atom * @n + @offset_xls_one_side);
+}
+
 .shift-xxs(@n){
     .xxs(margin-left, @atom * @n + @offset_xxs_one_side);
     .xxs(margin-right, @atom * @n + @offset_xxs_one_side);
@@ -298,6 +397,18 @@
     .xxxs(padding-right, @atom * @n + @offset_xxxs_one_side);
 }
 
+.ml(@name, @value){
+    @media screen and (max-width: @break_ml){
+        @{name}: @value;
+    }
+}
+
+.ml-block(@content){
+    @media screen and (max-width: @break_ml){
+        @content();
+    }
+}
+
 .m(@name, @value){
     @media screen and (max-width: @break_m){
         @{name}: @value;
@@ -306,6 +417,18 @@
 
 .m-block(@content){
     @media screen and (max-width: @break_m){
+        @content();
+    }
+}
+
+.mk(@name, @value){
+    @media screen and (max-width: @break_mk){
+        @{name}: @value;
+    }
+}
+
+.mk-block(@content){
+    @media screen and (max-width: @break_mk){
         @content();
     }
 }
@@ -342,6 +465,18 @@
 
 .xs-block(@content){
     @media screen and (max-width: @break_xs){
+        @content();
+    }
+}
+
+.xls(@name, @value){
+    @media screen and (max-width: @break_xls){
+        @{name}: @value;
+    }
+}
+
+.xls-block(@content){
+    @media screen and (max-width: @break_xls){
         @content();
     }
 }
