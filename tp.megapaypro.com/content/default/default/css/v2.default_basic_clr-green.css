@@ -1,0 +1,67 @@
+:root {
+    --main-bl: #000000;
+    --main-green: #1fd61f;
+    /*--main-blue: #3333ff;*/
+    --main-blue: #00497f;
+    --main-red: #ff0000;
+    --main-white: #ffffff;
+
+    --c_p_item_prod_brdr : #cccccc;
+    --c_p_item_prod_brdr_hvr : #999999;
+
+    --img_itemlist_max_w: 40px;
+
+    /*Gunmetal body texts*/
+    --body-bg: white;
+    --body-bg: white;
+    --body-txt-c: #2C3539;
+    --item-btn-bg: var(--main-red);
+    --item-btn-c: var(--main-white);
+
+    /*THEME SPECIFIC*/
+    --main-bg: var(--main-green);
+    --main-alt: var(--main-red);
+
+    /*MODAL*/
+    /*--mm-hdr-bg: #eee;*/
+    --mm-hdr-bg: rgba(238,238,238,.2);
+
+    /*SLIDER CART*/
+    --sldr-t-even: #fff;
+    --sldr-t-odd: #eee;
+
+    /*PAYMENT*/
+    --btn-pay-c: var(--item-btn-c);
+    --btn-pay-bg: #4CAF50;
+    --btn-pay-bg-h: #45a049;
+    --btn-chk-addr-c: var(--item-btn-c);
+    --btn-chk-addr-bg: #d49c6b;
+    --btn-chk-addr-bg-h: #cb884d;
+
+    /*RECEIPT*/
+
+    --rcpt-t-b: var(--main-bg);
+    --rcpt-t-bg: var(--main-white);
+    --rcpt-t-thead-bg: var(--main-bg);
+    --rcpt-t-thead-c: var(--main-white);
+    --rcpt-t-thead-b-l: var(--main-bg);
+
+    --rcpt-t-tfoot-c: var(--body-txt-c);
+    --rcpt-t-tfoot-bg: var(--main-white);
+    --rcpt-t-tfoot-tr-b: var(--main-bg);
+    --rcpt-t-tfoot-tr-nth-ch1: var(--main-bg);
+
+    --rcpt-t-td-b: var(--main-bg);
+    --rcpt-t-th-b: var(--rcpt-t-td-b);
+    --rcpt-t-tr-even: #eee;
+    --rcpt-t-tr-h: #EEE7DB;
+    --rcpt-t-tr-sys_err-c: var(--main-white);
+    --rcpt-t-tr-sys_err-bg: var(--main-red);
+
+    --rcptSuccess: White;
+    --rcptSuccess_bg: LightGreen;
+    --rcptFailed: White;
+    --rcptFailed_bg: LightCoral;
+
+
+}

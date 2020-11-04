@@ -1,0 +1,978 @@
+﻿<!--plugin cfg-->
+<!DOCTYPE html>
+<html>
+<head>
+    <!--head:-->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes"/>-->
+    <!--<meta http-equiv="X-UA-Compatible" content="ie=edge"/>-->
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="css/styles-ie9.css">
+    <![endif]-->
+    <title>IGA Cashmere</title>
+    <!--head.-->
+    <!--shared head:-->
+
+
+    <!--shared head. -->
+    <script type="text/javascript" src="content/default/_common/addon/jquery/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="content/default/_common/css/alert.css">
+    <!--V2-->
+    <link rel="stylesheet" href="content/default/default/css/v2.breadcrumb.css">
+    <link rel="stylesheet" href="content/default/default/css/v2.default_basic.css">
+    <script src="https://kit.fontawesome.com/4d136e0f8b.js" crossorigin="anonymous"></script>
+
+
+    <!--include dynamic:-->
+    <style type="text/css">
+        @import url("content/default/default/css/v2.default_basic_clr-red.css");
+
+        .slider {
+            margin-top: 8px;
+            background: url(content/custom/IGACashmere/img/gallery/Veggie_stirfry_Desktop_big.png) no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+
+    </style>
+    <!--include dynamic.-->
+    <!--V2-->
+</head>
+<body>
+<!--header:-->
+<noscript>
+    <p style="margin-right: auto; margin-left: auto; width: 400px;  font-size: x-large;">
+        JavaScript Required
+    </p>
+    <p style="margin-right: auto; margin-left: auto; width: 400px;  font-size: medium;">
+        We're sorry, but MegaPay Trading Platform does not work properly without JavaScript enabled.
+    </p>
+    <style>div {
+        display: none;
+    }</style>
+</noscript>
+
+<header class="navigation">
+    <div class="wrapper">
+        <div class="logos">
+            <div class="logos__header">
+                <a href="http://www.megapaypro.com"><img src="content/custom/IGACashmere/img/logo1.svg" alt="logo"></a>
+            </div>
+            <div class="logos__updatever" itemscope
+                 itemtype="https://schema.org/LocalBusiness">
+                <div class="upadatever__href"><a href="tel:0738823080" class="dropdown">
+                    <div>Get in touch with us, anytime!</div>
+                    <!--                        <div class="flag-icon flag-icon-au"></div>-->
+                    <div class="tell">(07) 3882 3080</div>
+                </a>
+                </div>
+            </div>
+            <div class="logos__sheet__headers">
+                <div id="app" class="menu_slider">
+                    <div id="sbar_topbtn" onclick="ShowHide(this)" class="sbar sidebar">
+                        <ul>
+                            <li><a href="/catalog.html">Catalog</a></li>
+                            <li><a href="igacashmere-1.html?XDEBUG_SESSION_START=netbeans-xdebug">Menu</a></li>
+                            <li><a data-mah="5E47560B58ADF5B0B0298E911D3FF0BC8867B735B59030A12355058D07A3D330"
+                                   onclick="showInfo(this, event)">Opening Hours</a></li>
+                            <li><a href="igacashmere-2.html?doc=termsncond">Terms & conditions</a></li>
+                            <li><a href="igacashmere-3.html?doc=privpolisy">Privacy Policy</a></li>
+                            <li>
+                                <div class="menu_slider_li_div_clt_th">
+                                    <a href="igacashmere-4.html?g=1-1424&clr_theme=th-red">
+                                        <div class="thR">Red</div>
+                                    </a>
+                                    <a href="igacashmere-5.html?g=1-1424&clr_theme=th-green">
+                                        <div class="thG">Green</div>
+                                    </a>
+                                    <a href="igacashmere-6.html?g=1-1424&clr_theme=th-blue">
+                                        <div class="thB">Blue</div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="main">
+                        <div onclick="ShowHide(this)" class="sbar hamburgerButton">
+                            <div class="hamburger bar1"></div>
+                            <div class="hamburger bar2"></div>
+                            <div class="hamburger bar3"></div>
+                        </div>
+                    </div>
+                    <div id="shcart_topbtn" onclick="ShowHide(this)" class="shcart shoopers">
+                        <div class="sticky">
+
+                            <div id="shcart_pay" class="pay" name="Submit">PAY</div>
+                            <div id="shcart_clear" class="clear" name="Submit" value="delAllItems"
+                                 onclick="clearBasket(this, event)">CLEAR
+                            </div>
+
+                        </div>
+                        <form method="post" name="CartPayF" id="CartPayF"
+                              action="/igacashmere?location=basket&XDEBUG_SESSION_START=netbeans-xdebug">
+                            <input type="hidden" id="ma_status_ajax" name="ma_status_ajax">
+                            <input type="hidden" name="action" value="prepare_to_pay">
+                            <input type="hidden" name="MAH" value="">
+                            <div id="shcart_topbtn_html"><p class="text-cart-empty">Cart is empty</p></div>
+                        </form>
+                    </div>
+                    <div id="main__shoop">
+                        <div onclick="ShowHide(this)" class="shcart logos__shopping herth">
+                            <div class="scoping ">
+                                <img src="content/custom/IGACashmere/img/shoping.svg" alt="shoping">
+                            </div>
+                            <div id="zindex" class="zindex"><p>0</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--header.-->
+<!--body:-->
+<!--shared body:-->
+<section class="slider">
+    <div class="wrapper">
+        <div style="position: absolute; display: flex;">
+            <div id="time_alert_box" class="boxOffTime" style="display:none"></div>
+            <div id="MAState_alert_box" class="boxMAState" style="display:none"></div>
+        </div>
+
+        <div class="slider__seafood">
+            <div class="slider__seafood__one">
+                <div class="one__food">
+                    <a href="igacashmere-7.html">
+                        <h2 class="h2">
+                            <i class="fa fa-home home-ico" aria-hidden="true"></i> IGA Cashmere </h2>
+                    </a>
+                </div>
+                <div class="one__health">
+                    <p>
+                        $ • Grocery / Food / Delivery<br>
+                        1 Warra Ln, Cashmere QLD 4500<br>
+                        <abbr title="Phone">P:</abbr> (07) 3882 3080<br>
+                    </p>
+                </div>
+            </div>
+            <div class="slider__seafood__two">
+                <div class="two__button">
+                    <a class="button" data-mah="5E47560B58ADF5B0B0298E911D3FF0BC8867B735B59030A12355058D07A3D330"
+                       onclick="showInfo(this, event)">More info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--shared body.-->
+
+<main class="content">
+    <div class="wrapper">
+        <div class="content__product">
+            <!--breadcrumb-->
+            <div class="breadcrumb_block">
+                <ul id="breadcrumb">
+                    <li><a><span class="icon icon-home"></span></a></li>
+                    <li><a href="igacashmere-1.html"><span class="icon icon-beaker"> </span>Top</a></li>
+                    <li><a href="igacashmere.html?g=1-1424"><span class="icon icon-beaker">Potato Chips</span></a></li>
+                </ul>
+            </div>            <!--breadcrumb.-->
+        </div>
+
+        <div class="content__ma_info">
+            <!--modal:-->
+            <div class="modal micromodal-slide"
+                 id="modal-mah-5E47560B58ADF5B0B0298E911D3FF0BC8867B735B59030A12355058D07A3D330" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+
+                    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-mah-title">
+                        <header class="modal__header">
+                            <h2 class="h2">
+                                <i class="fa fa-home home-ico" aria-hidden="true"></i> IGA Cashmere </h2>
+                            <button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+                        </header>
+                        <div class="modal__main_wrapper">
+                            <main class="modal__content" id="modal-mah-content">
+                                <h3>
+                                    <p>
+                                        <i class="fa fa-map-marker"></i>
+                                        1 Warra Ln, Cashmere QLD 4500<br>
+                                        <i class="fa fa-phone"></i>
+                                        <abbr title="Phone">P:</abbr> (07) 3882 3080<br>
+                                    </p>
+                                </h3>
+                                <p>
+                                    ABN:66 617 649 448
+                                <div class="rTable">
+                                    <div class="rTableRow">
+                                        <div class="rTableCell rTableCellLeft">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            Monday&nbsp;
+                                        </div>
+                                        <div class="rTableCell rTableCellCenter">06:30</div>
+                                        <div class="rTableCell rTableCellCenter">-</div>
+                                        <div class="rTableCell rTableCellRight">19:30</div>
+                                        <div class="rTableCell rTableCellLeft"></div>
+                                    </div>
+                                    <div class="rTableRow">
+                                        <div class="rTableCell rTableCellLeft">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            Tuesday&nbsp;
+                                        </div>
+                                        <div class="rTableCell rTableCellCenter">06:30</div>
+                                        <div class="rTableCell rTableCellCenter">-</div>
+                                        <div class="rTableCell rTableCellRight">19:30</div>
+                                        <div class="rTableCell rTableCellLeft">
+                                            <div class="altert_txt_blink">&nbsp;<strong> now is 21:34</strong></div>
+                                        </div>
+                                    </div>
+                                    <div class="rTableRow">
+                                        <div class="rTableCell rTableCellLeft">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            Wednesday&nbsp;
+                                        </div>
+                                        <div class="rTableCell rTableCellCenter">06:30</div>
+                                        <div class="rTableCell rTableCellCenter">-</div>
+                                        <div class="rTableCell rTableCellRight">19:30</div>
+                                        <div class="rTableCell rTableCellLeft"></div>
+                                    </div>
+                                    <div class="rTableRow">
+                                        <div class="rTableCell rTableCellLeft">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            Thursday&nbsp;
+                                        </div>
+                                        <div class="rTableCell rTableCellCenter">06:30</div>
+                                        <div class="rTableCell rTableCellCenter">-</div>
+                                        <div class="rTableCell rTableCellRight">19:30</div>
+                                        <div class="rTableCell rTableCellLeft"></div>
+                                    </div>
+                                    <div class="rTableRow">
+                                        <div class="rTableCell rTableCellLeft">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            Friday&nbsp;
+                                        </div>
+                                        <div class="rTableCell rTableCellCenter">06:30</div>
+                                        <div class="rTableCell rTableCellCenter">-</div>
+                                        <div class="rTableCell rTableCellRight">19:30</div>
+                                        <div class="rTableCell rTableCellLeft"></div>
+                                    </div>
+                                    <div class="rTableRow">
+                                        <div class="rTableCell rTableCellLeft">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            Saturday&nbsp;
+                                        </div>
+                                        <div class="rTableCell rTableCellCenter">06:30</div>
+                                        <div class="rTableCell rTableCellCenter">-</div>
+                                        <div class="rTableCell rTableCellRight">19:30</div>
+                                        <div class="rTableCell rTableCellLeft"></div>
+                                    </div>
+                                    <div class="rTableRow">
+                                        <div class="rTableCell rTableCellLeft">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            Sunday&nbsp;
+                                        </div>
+                                        <div class="rTableCell rTableCellCenter">06:30</div>
+                                        <div class="rTableCell rTableCellCenter">-</div>
+                                        <div class="rTableCell rTableCellRight">19:30</div>
+                                        <div class="rTableCell rTableCellLeft"></div>
+                                    </div>
+                                </div>
+
+                            </main>
+                            <footer class="modal__footer" style="vertical-align: middle;">
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--modal.-->
+        </div>
+
+        <div class="content__production">
+            <div class="item__prod prod " style="cursor: pointer;"
+                 data-href="/igacashmere?i=I23CAC4E9C819BD6E4D983FC9010BBD3AA18FCCF2BFD893CE51CA2CAAD4BBD71D"
+                 data-item_id="I23CAC4E9C819BD6E4D983FC9010BBD3AA18FCCF2BFD893CE51CA2CAAD4BBD71D"
+                 onclick="productClick(this, event)">
+                <div class="prod__product items ">
+                    <div class="product__special"><img
+                            src="content/custom/IGACashmere/img/pm-callout-cache.png" alt="special">
+                    </div>
+                    <div class="product__image">
+                        <img src="content/images.shared/TradingPlatform/IGACashmere/I23CAC4E9C819BD6E4D983FC9010BBD3AA18FCCF2BFD893CE51CA2CAAD4BBD71D/Picture_7.jpeg">
+                    </div>
+                    <a href="igacashmere-8.html?i=I23CAC4E9C819BD6E4D983FC9010BBD3AA18FCCF2BFD893CE51CA2CAAD4BBD71D">
+
+                    </a>
+                    <div class="product__chips prom">
+                          <p>French Fries Original 175g  French Fries Original 175g French Fries Original 175g</p>
+                    </div>
+                    <a class="lbl_action ViewQR" href="#popup_qr" data-cmd="showQR"
+                       data-title="French Fries Original 175g $3.50">QR</a>
+                    <div class="product__buttons buttond">
+                        <a href="igacashmere-8.html?i=I23CAC4E9C819BD6E4D983FC9010BBD3AA18FCCF2BFD893CE51CA2CAAD4BBD71D">
+                            <div class="buttons__dev">
+                                <div id="pamount.g1-1424i1-5471" data-amount_orig="3.50" class="dev__one">
+                                    <p class="one__dev">$2</p> <span class="one__span">$3.50</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--<a id="I23CAC4E9C819BD6E4D983FC9010BBD3AA18FCCF2BFD893CE51CA2CAAD4BBD71D" data-item_id="g1-1424i1-5471" data-amount="3.50" data-title="French Fries Original 175g">-->
+                        <button id="I23CAC4E9C819BD6E4D983FC9010BBD3AA18FCCF2BFD893CE51CA2CAAD4BBD71D"
+                                data-item_id="g1-1424i1-5471" data-amount="3.50"
+                                data-title="French Fries Original 175g">add
+                        </button>
+                        <!--</a>-->
+                    </div>
+
+
+                    <!--dynamic options:-->
+                    <!--options:-->
+                    <!--options.-->
+                    <!--dynamic options.-->
+                </div>
+            </div>
+            <div class="item__prod prod " style="cursor: pointer;"
+                 data-href="/igacashmere?i=I18A9601FBEAE363455EB8283EF5FEFC5EDABBC10DED0B3FF2093F78BC964DEA2"
+                 data-item_id="I18A9601FBEAE363455EB8283EF5FEFC5EDABBC10DED0B3FF2093F78BC964DEA2"
+                 onclick="productClick(this, event)">
+                <div class="prod__product items ">
+                    <div class="product__special"><img
+                            src="content/custom/IGACashmere/img/pm-callout-cache.png" alt="special">
+                    </div>
+                    <a href="igacashmere-9.html?i=I18A9601FBEAE363455EB8283EF5FEFC5EDABBC10DED0B3FF2093F78BC964DEA2">
+                        <div class="product__image">
+                            <img src="content/images.shared/TradingPlatform/IGACashmere/I18A9601FBEAE363455EB8283EF5FEFC5EDABBC10DED0B3FF2093F78BC964DEA2/Picture_9.jpeg">
+                        </div>
+                    </a>
+                    <div class="product__chips prom">
+                         <p>Samboy Chips BBQ 175g</p>
+                    </div>
+                    <a class="lbl_action ViewQR" href="#popup_qr" data-cmd="showQR"
+                       data-title="Samboy Chips BBQ 175g $3.50">QR</a>
+                    <div class="product__buttons buttond">
+                        <a href="igacashmere-9.html?i=I18A9601FBEAE363455EB8283EF5FEFC5EDABBC10DED0B3FF2093F78BC964DEA2">
+                            <div class="buttons__dev">
+                                <div id="pamount.g1-1424i1-5472" data-amount_orig="3.50" class="dev__one">
+                                    <p class="one__dev">$2</p> <span class="one__span">$3.50</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--<a id="I18A9601FBEAE363455EB8283EF5FEFC5EDABBC10DED0B3FF2093F78BC964DEA2" data-item_id="g1-1424i1-5472" data-amount="3.50" data-title="Samboy Chips BBQ 175g">-->
+                        <button id="I18A9601FBEAE363455EB8283EF5FEFC5EDABBC10DED0B3FF2093F78BC964DEA2"
+                                data-item_id="g1-1424i1-5472" data-amount="3.50" data-title="Samboy Chips BBQ 175g">add
+                        </button>
+                        <!--</a>-->
+                    </div>
+
+
+                    <!--dynamic options:-->
+                    <!--options:-->
+                    <!--options.-->
+                    <!--dynamic options.-->
+                </div>
+            </div>
+            <div class="item__prod prod " style="cursor: pointer;"
+                 data-href="/igacashmere?i=I22373A228E2AB3F288E9AEF0EC81875707967BB011991719CD618FE9C33BB0E8"
+                 data-item_id="I22373A228E2AB3F288E9AEF0EC81875707967BB011991719CD618FE9C33BB0E8"
+                 onclick="productClick(this, event)">
+                <div class="prod__product items ">
+                    <div class="product__special"><img
+                            src="content/custom/IGACashmere/img/pm-callout-cache.png" alt="special">
+                    </div>
+                    <a href="igacashmere-10.html?i=I22373A228E2AB3F288E9AEF0EC81875707967BB011991719CD618FE9C33BB0E8">
+                        <div class="product__image">
+                            <img src="content/images.shared/TradingPlatform/IGACashmere/I22373A228E2AB3F288E9AEF0EC81875707967BB011991719CD618FE9C33BB0E8/Picture_15.jpeg">
+                        </div>
+                    </a>
+                    <div class="product__chips prom">
+                         <p>Samboy Chips Tomato 175g</p>
+                    </div>
+                    <a class="lbl_action ViewQR" href="#popup_qr" data-cmd="showQR"
+                       data-title="Samboy Chips Tomato 175g $3.50">QR</a>
+                    <div class="product__buttons buttond">
+                        <a href="igacashmere-10.html?i=I22373A228E2AB3F288E9AEF0EC81875707967BB011991719CD618FE9C33BB0E8">
+                            <div class="buttons__dev">
+                                <div id="pamount.g1-1424i1-5473" data-amount_orig="3.50" class="dev__one">
+                                    <p class="one__dev">$2</p> <span class="one__span">$3.50</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--<a id="I22373A228E2AB3F288E9AEF0EC81875707967BB011991719CD618FE9C33BB0E8" data-item_id="g1-1424i1-5473" data-amount="3.50" data-title="Samboy Chips Tomato 175g">-->
+                        <button id="I22373A228E2AB3F288E9AEF0EC81875707967BB011991719CD618FE9C33BB0E8"
+                                data-item_id="g1-1424i1-5473" data-amount="3.50" data-title="Samboy Chips Tomato 175g">
+                            add
+                        </button>
+                        <!--</a>-->
+                    </div>
+
+
+                    <!--dynamic options:-->
+                    <!--options:-->
+                    <!--options.-->
+                    <!--dynamic options.-->
+                </div>
+            </div>
+            <div class="item__prod prod " style="cursor: pointer;"
+                 data-href="/igacashmere?i=I213164D666C628F999D07BFC8A0748C7654DDD93CC47FB7EB7775DD9E6EF1FF3"
+                 data-item_id="I213164D666C628F999D07BFC8A0748C7654DDD93CC47FB7EB7775DD9E6EF1FF3"
+                 onclick="productClick(this, event)">
+                <div class="prod__product items ">
+                    <div class="product__special"><img
+                            src="content/custom/IGACashmere/img/pm-callout-cache.png" alt="special">
+                    </div>
+                    <a href="igacashmere-11.html?i=I213164D666C628F999D07BFC8A0748C7654DDD93CC47FB7EB7775DD9E6EF1FF3">
+                        <div class="product__image">
+                            <img src="content/images.shared/TradingPlatform/IGACashmere/I213164D666C628F999D07BFC8A0748C7654DDD93CC47FB7EB7775DD9E6EF1FF3/Picture_11.jpeg">
+                        </div>
+                    </a>
+                    <div class="product__chips prom">
+                         <p>Samboy Chips Chicken 175g</p>
+                    </div>
+                    <a class="lbl_action ViewQR" href="#popup_qr" data-cmd="showQR"
+                       data-title="French Fries Original 175g $3.50">QR</a>
+                    <div class="product__buttons buttond">
+                        <a href="igacashmere-11.html?i=I213164D666C628F999D07BFC8A0748C7654DDD93CC47FB7EB7775DD9E6EF1FF3">
+                            <div class="buttons__dev">
+                                <div id="pamount.g1-1424i1-5474" data-amount_orig="3.50" class="dev__one">
+                                    <p class="one__dev">$2</p> <span class="one__span">$3.50</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--<a id="I213164D666C628F999D07BFC8A0748C7654DDD93CC47FB7EB7775DD9E6EF1FF3" data-item_id="g1-1424i1-5474" data-amount="3.50" data-title="Samboy Chips Chicken 175g">-->
+                        <button id="I213164D666C628F999D07BFC8A0748C7654DDD93CC47FB7EB7775DD9E6EF1FF3"
+                                data-item_id="g1-1424i1-5474" data-amount="3.50" data-title="Samboy Chips Chicken 175g">
+                            add
+                        </button>
+                        <!--</a>-->
+                    </div>
+
+
+                    <!--dynamic options:-->
+                    <!--options:-->
+                    <!--options.-->
+                    <!--dynamic options.-->
+                </div>
+            </div>
+            <div class="item__prod prod " style="cursor: pointer;"
+                 data-href="/igacashmere?i=I95C15A95946DCE3724C7068E115F585F164C33B92D061788B6681C38751B27FD"
+                 data-item_id="I95C15A95946DCE3724C7068E115F585F164C33B92D061788B6681C38751B27FD"
+                 onclick="productClick(this, event)">
+                <div class="prod__product items ">
+                    <div class="product__special"><img
+                            src="content/custom/IGACashmere/img/pm-callout-cache.png" alt="special">
+                    </div>
+                    <a href="igacashmere-12.html?i=I95C15A95946DCE3724C7068E115F585F164C33B92D061788B6681C38751B27FD">
+                        <div class="product__image">
+                            <img src="content/images.shared/TradingPlatform/IGACashmere/I95C15A95946DCE3724C7068E115F585F164C33B92D061788B6681C38751B27FD/Picture_13.jpeg">
+                        </div>
+                    </a>
+                    <div class="product__chips prom">
+                         <p>Samboy Chips Salt & Vinegar 175g</p>
+                    </div>
+                    <a class="lbl_action ViewQR" href="#popup_qr" data-cmd="showQR"
+                       data-title="Samboy Chips Salt & Vinegar 175g $3.50">QR</a>
+                    <div class="product__buttons buttond">
+                        <a href="igacashmere-12.html?i=I95C15A95946DCE3724C7068E115F585F164C33B92D061788B6681C38751B27FD">
+                            <div class="buttons__dev">
+                                <div id="pamount.g1-1424i1-5475" data-amount_orig="3.50" class="dev__one">
+                                    <p class="one__dev">$2</p> <span class="one__span">$3.50</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--<a id="I95C15A95946DCE3724C7068E115F585F164C33B92D061788B6681C38751B27FD" data-item_id="g1-1424i1-5475" data-amount="3.50" data-title="Samboy Chips Salt & Vinegar 175g">-->
+                        <button id="I95C15A95946DCE3724C7068E115F585F164C33B92D061788B6681C38751B27FD"
+                                data-item_id="g1-1424i1-5475" data-amount="3.50"
+                                data-title="Samboy Chips Salt & Vinegar 175g">add
+                        </button>
+                        <!--</a>-->
+                    </div>
+
+
+                    <!--dynamic options:-->
+                    <!--options:-->
+                    <!--options.-->
+                    <!--dynamic options.-->
+                </div>
+            </div>
+            <div class="item__prod prod " style="cursor: pointer;"
+                 data-href="/igacashmere?i=I1AB060A9D734616E4B7E63806C2B9D48EA6EB4033B273E74B3A4A2704ED70981"
+                 data-item_id="I1AB060A9D734616E4B7E63806C2B9D48EA6EB4033B273E74B3A4A2704ED70981"
+                 onclick="productClick(this, event)">
+                <div class="prod__product items ">
+                    <div class="product__special"><img
+                            src="content/custom/IGACashmere/img/pm-callout-cache.png" alt="special">
+                    </div>
+                    <a href="igacashmere-13.html?i=I1AB060A9D734616E4B7E63806C2B9D48EA6EB4033B273E74B3A4A2704ED70981">
+                        <div class="product__image">
+                            <img src="content/images.shared/TradingPlatform/IGACashmere/I1AB060A9D734616E4B7E63806C2B9D48EA6EB4033B273E74B3A4A2704ED70981/Picture_23.jpeg">
+                        </div>
+                    </a>
+                    <div class="product__chips prom">
+                         <p>Thins Chips Original 175g</p>
+                    </div>
+                    <a class="lbl_action ViewQR" href="#popup_qr" data-cmd="showQR"
+                       data-title="French Fries Original 175g $3.50">QR</a>
+                    <div class="product__buttons buttond">
+                        <a href="igacashmere-13.html?i=I1AB060A9D734616E4B7E63806C2B9D48EA6EB4033B273E74B3A4A2704ED70981">
+                            <div class="buttons__dev">
+                                <div id="pamount.g1-1424i1-5476" data-amount_orig="3.50" class="dev__one">
+                                    <p class="one__dev">$2</p> <span class="one__span">$3.50</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--<a id="I1AB060A9D734616E4B7E63806C2B9D48EA6EB4033B273E74B3A4A2704ED70981" data-item_id="g1-1424i1-5476" data-amount="3.50" data-title="Thins Chips Original 175g">-->
+                        <button id="I1AB060A9D734616E4B7E63806C2B9D48EA6EB4033B273E74B3A4A2704ED70981"
+                                data-item_id="g1-1424i1-5476" data-amount="3.50" data-title="Thins Chips Original 175g">
+                            add
+                        </button>
+                        <!--</a>-->
+                    </div>
+
+
+                    <!--dynamic options:-->
+                    <!--options:-->
+                    <!--options.-->
+                    <!--dynamic options.-->
+                </div>
+            </div>
+            <div class="item__prod prod " style="cursor: pointer;"
+                 data-href="/igacashmere?i=I27E7261603A84CE20AF015E4EF3F9C50A231050A762DB37ADF89BD944B2CD4DD"
+                 data-item_id="I27E7261603A84CE20AF015E4EF3F9C50A231050A762DB37ADF89BD944B2CD4DD"
+                 onclick="productClick(this, event)">
+                <div class="prod__product items ">
+                    <div class="product__special"><img
+                            src="content/custom/IGACashmere/img/pm-callout-cache.png" alt="special">
+                    </div>
+                    <a href="igacashmere-14.html?i=I27E7261603A84CE20AF015E4EF3F9C50A231050A762DB37ADF89BD944B2CD4DD">
+                        <div class="product__image">
+                            <img src="content/images.shared/TradingPlatform/IGACashmere/I27E7261603A84CE20AF015E4EF3F9C50A231050A762DB37ADF89BD944B2CD4DD/Picture_25.jpeg">
+                        </div>
+                    </a>
+                    <div class="product__chips prom">
+                         <p>Thins Chips Salt & Vinegar 175g</p>
+                    </div>
+                    <a class="lbl_action ViewQR" href="#popup_qr" data-cmd="showQR"
+                       data-title="Thins Chips Salt & Vinegar 175g $3.50">QR</a>
+                    <div class="product__buttons buttond">
+                        <a href="igacashmere-14.html?i=I27E7261603A84CE20AF015E4EF3F9C50A231050A762DB37ADF89BD944B2CD4DD">
+                            <div class="buttons__dev">
+                                <div id="pamount.g1-1424i1-5477" data-amount_orig="3.50" class="dev__one">
+                                    <p class="one__dev">$2</p> <span class="one__span">$3.50</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--<a id="I27E7261603A84CE20AF015E4EF3F9C50A231050A762DB37ADF89BD944B2CD4DD" data-item_id="g1-1424i1-5477" data-amount="3.50" data-title="Thins Chips Salt & Vinegar 175g">-->
+                        <button id="I27E7261603A84CE20AF015E4EF3F9C50A231050A762DB37ADF89BD944B2CD4DD"
+                                data-item_id="g1-1424i1-5477" data-amount="3.50"
+                                data-title="Thins Chips Salt & Vinegar 175g">add
+                        </button>
+                        <!--</a>-->
+                    </div>
+
+
+                    <!--dynamic options:-->
+                    <!--options:-->
+                    <!--options.-->
+                    <!--dynamic options.-->
+                </div>
+            </div>
+            <div class="item__prod prod " style="cursor: pointer;"
+                 data-href="/igacashmere?i=IFA01A6E709CF28007F1CD5D325B0630A6BC0706C251AC24AE679B279447A3649"
+                 data-item_id="IFA01A6E709CF28007F1CD5D325B0630A6BC0706C251AC24AE679B279447A3649"
+                 onclick="productClick(this, event)">
+                <div class="prod__product items ">
+                    <div class="product__special"><img
+                            src="content/custom/IGACashmere/img/pm-callout-cache.png" alt="special">
+                    </div>
+                    <a href="igacashmere-15.html?i=IFA01A6E709CF28007F1CD5D325B0630A6BC0706C251AC24AE679B279447A3649">
+                        <div class="product__image">
+                            <img src="content/images.shared/TradingPlatform/IGACashmere/IFA01A6E709CF28007F1CD5D325B0630A6BC0706C251AC24AE679B279447A3649/Picture_21.jpeg">
+                        </div>
+                    </a>
+                    <div class="product__chips prom">
+                         <p>French Fries Original 175g</p>
+                    </div>
+                    <a class="lbl_action ViewQR" href="#popup_qr" data-cmd="showQR"
+                       data-title="Thins Chips Light & Tangy 175g $3.50">QR</a>
+                    <div class="product__buttons buttond">
+                        <a href="igacashmere-15.html?i=IFA01A6E709CF28007F1CD5D325B0630A6BC0706C251AC24AE679B279447A3649">
+                            <div class="buttons__dev">
+                                <div id="pamount.g1-1424i1-5478" data-amount_orig="3.50" class="dev__one">
+                                    <p class="one__dev">$2</p> <span class="one__span">$3.50</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--<a id="IFA01A6E709CF28007F1CD5D325B0630A6BC0706C251AC24AE679B279447A3649" data-item_id="g1-1424i1-5478" data-amount="3.50" data-title="Thins Chips Light & Tangy 175g">-->
+                        <button id="IFA01A6E709CF28007F1CD5D325B0630A6BC0706C251AC24AE679B279447A3649"
+                                data-item_id="g1-1424i1-5478" data-amount="3.50"
+                                data-title="Thins Chips Light & Tangy 175g">add
+                        </button>
+                        <!--</a>-->
+                    </div>
+
+
+                    <!--dynamic options:-->
+                    <!--options:-->
+                    <!--options.-->
+                    <!--dynamic options.-->
+                </div>
+            </div>
+            <div class="item__prod prod " style="cursor: pointer;"
+                 data-href="/igacashmere?i=I30775767E3DDFF945E467FCCD3CC1F1F5F3B74069082326D839B67B648AD30EF"
+                 data-item_id="I30775767E3DDFF945E467FCCD3CC1F1F5F3B74069082326D839B67B648AD30EF"
+                 onclick="productClick(this, event)">
+                <div class="prod__product items ">
+                    <div class="product__special"><img
+                            src="content/custom/IGACashmere/img/pm-callout-cache.png" alt="special">
+                    </div>
+                    <a href="igacashmere-16.html?i=I30775767E3DDFF945E467FCCD3CC1F1F5F3B74069082326D839B67B648AD30EF">
+                        <div class="product__image">
+                            <img src="content/images.shared/TradingPlatform/IGACashmere/I30775767E3DDFF945E467FCCD3CC1F1F5F3B74069082326D839B67B648AD30EF/Picture_17.png">
+                        </div>
+                    </a>
+                    <div class="product__chips prom">
+                         <p>Thins Chips Cheese & Onion 175g</p>
+                    </div>
+                    <a class="lbl_action ViewQR" href="#popup_qr" data-cmd="showQR"
+                       data-title="French Fries Original 175g $3.50">QR</a>
+                    <div class="product__buttons buttond">
+                        <a href="igacashmere-16.html?i=I30775767E3DDFF945E467FCCD3CC1F1F5F3B74069082326D839B67B648AD30EF">
+                            <div class="buttons__dev">
+                                <div id="pamount.g1-1424i1-5479" data-amount_orig="3.50" class="dev__one">
+                                    <p class="one__dev">$2</p> <span class="one__span">$3.50</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--<a id="I30775767E3DDFF945E467FCCD3CC1F1F5F3B74069082326D839B67B648AD30EF" data-item_id="g1-1424i1-5479" data-amount="3.50" data-title="Thins Chips Cheese & Onion 175g">-->
+                        <button id="I30775767E3DDFF945E467FCCD3CC1F1F5F3B74069082326D839B67B648AD30EF"
+                                data-item_id="g1-1424i1-5479" data-amount="3.50"
+                                data-title="Thins Chips Cheese & Onion 175g">add
+                        </button>
+                        <!--</a>-->
+                    </div>
+
+
+                    <!--dynamic options:-->
+                    <!--options:-->
+                    <!--options.-->
+                    <!--dynamic options.-->
+                </div>
+            </div>
+            <div class="item__prod prod " style="cursor: pointer;"
+                 data-href="/igacashmere?i=I11AC907F1C1E91B7F15AB6D59F94F3FF21908866EAEB92A2518CA2134558F4F9"
+                 data-item_id="I11AC907F1C1E91B7F15AB6D59F94F3FF21908866EAEB92A2518CA2134558F4F9"
+                 onclick="productClick(this, event)">
+                <div class="prod__product items ">
+                    <div class="product__special"><img
+                            src="content/custom/IGACashmere/img/pm-callout-cache.png" alt="special">
+                    </div>
+                    <a href="igacashmere-17.html?i=I11AC907F1C1E91B7F15AB6D59F94F3FF21908866EAEB92A2518CA2134558F4F9">
+                        <div class="product__image">
+                            <img src="content/images.shared/TradingPlatform/IGACashmere/I11AC907F1C1E91B7F15AB6D59F94F3FF21908866EAEB92A2518CA2134558F4F9/Picture_19.jpeg">
+                        </div>
+                    </a>
+                    <div class="product__chips prom">
+                        Thins Chips Chicken 175g <p></p>
+                    </div>
+                    <a class="lbl_action ViewQR" href="#popup_qr" data-cmd="showQR"
+                       data-title="Thins Chips Chicken 175g $3.50">QR</a>
+                    <div class="product__buttons buttond">
+                        <a href="igacashmere-17.html?i=I11AC907F1C1E91B7F15AB6D59F94F3FF21908866EAEB92A2518CA2134558F4F9">
+                            <div class="buttons__dev">
+                                <div id="pamount.g1-1424i1-5480" data-amount_orig="3.50" class="dev__one">
+                                    <p class="one__dev">$2</p> <span class="one__span">$3.50</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--<a id="I11AC907F1C1E91B7F15AB6D59F94F3FF21908866EAEB92A2518CA2134558F4F9" data-item_id="g1-1424i1-5480" data-amount="3.50" data-title="Thins Chips Chicken 175g">-->
+                        <button id="I11AC907F1C1E91B7F15AB6D59F94F3FF21908866EAEB92A2518CA2134558F4F9"
+                                data-item_id="g1-1424i1-5480" data-amount="3.50" data-title="Thins Chips Chicken 175g">
+                            add
+                        </button>
+                        <!--</a>-->
+                    </div>
+
+
+                    <!--dynamic options:-->
+                    <!--options:-->
+                    <!--options.-->
+                    <!--dynamic options.-->
+                </div>
+            </div>
+            <div class="item__prod prod " style="cursor: pointer;"
+                 data-href="/igacashmere?i=I1E49544A036D3741EE77A9D3059A972F1B68A0BAE6AD6BC4E05167E9F420089F"
+                 data-item_id="I1E49544A036D3741EE77A9D3059A972F1B68A0BAE6AD6BC4E05167E9F420089F"
+                 onclick="productClick(this, event)">
+                <div class="prod__product items ">
+                    <div class="product__special"><img
+                            src="content/custom/IGACashmere/img/pm-callout-cache.png" alt="special">
+                    </div>
+                    <a href="igacashmere-18.html?i=I1E49544A036D3741EE77A9D3059A972F1B68A0BAE6AD6BC4E05167E9F420089F">
+                        <div class="product__image">
+                            <img src="content/images.shared/TradingPlatform/IGACashmere/I1E49544A036D3741EE77A9D3059A972F1B68A0BAE6AD6BC4E05167E9F420089F/Picture_27.jpeg">
+                        </div>
+                    </a>
+                    <div class="product__chips prom">
+                         <p>Thins Chips Sour Cream & Chives 175g</p>
+                    </div>
+                    <a class="lbl_action ViewQR" href="#popup_qr" data-cmd="showQR"
+                       data-title="Thins Chips Sour Cream & Chives 175g $3.50">QR</a>
+                    <div class="product__buttons buttond">
+                        <a href="igacashmere-18.html?i=I1E49544A036D3741EE77A9D3059A972F1B68A0BAE6AD6BC4E05167E9F420089F">
+                            <div class="buttons__dev">
+                                <div id="pamount.g1-1424i1-5481" data-amount_orig="3.50" class="dev__one">
+                                    <p class="one__dev">$2</p> <span class="one__span">$3.50</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--<a id="I1E49544A036D3741EE77A9D3059A972F1B68A0BAE6AD6BC4E05167E9F420089F" data-item_id="g1-1424i1-5481" data-amount="3.50" data-title="Thins Chips Sour Cream & Chives 175g">-->
+                        <button id="I1E49544A036D3741EE77A9D3059A972F1B68A0BAE6AD6BC4E05167E9F420089F"
+                                data-item_id="g1-1424i1-5481" data-amount="3.50"
+                                data-title="Thins Chips Sour Cream & Chives 175g">add
+                        </button>
+                        <!--</a>-->
+                    </div>
+
+
+                    <!--dynamic options:-->
+                    <!--options:-->
+                    <!--options.-->
+                    <!--dynamic options.-->
+                </div>
+            </div>
+            <div class="item__prod prod " style="cursor: pointer;"
+                 data-href="/igacashmere?i=I0755F07770B6AE0AFF831E57A79FD31859FD49C9B0A2045FB68BDEACF4F746BE"
+                 data-item_id="I0755F07770B6AE0AFF831E57A79FD31859FD49C9B0A2045FB68BDEACF4F746BE"
+                 onclick="productClick(this, event)">
+                <div class="prod__product items ">
+                    <div class="product__special"><img
+                            src="content/custom/IGACashmere/img/pm-callout-cache.png" alt="special">
+                    </div>
+                    <a href="igacashmere-19.html?i=I0755F07770B6AE0AFF831E57A79FD31859FD49C9B0A2045FB68BDEACF4F746BE">
+                        <div class="product__image">
+                            <img src="content/images.shared/TradingPlatform/IGACashmere/I0755F07770B6AE0AFF831E57A79FD31859FD49C9B0A2045FB68BDEACF4F746BE/Picture_28.jpeg">
+                        </div>
+                    </a>
+                    <div class="product__chips prom">
+                         <p>Cheezels Party Bag 190g</p>
+                    </div>
+                    <a class="lbl_action ViewQR" href="#popup_qr" data-cmd="showQR"
+                       data-title="Cheezels Party Bag 190g $3.50">QR</a>
+                    <div class="product__buttons buttond">
+                        <a href="igacashmere-19.html?i=I0755F07770B6AE0AFF831E57A79FD31859FD49C9B0A2045FB68BDEACF4F746BE">
+                            <div class="buttons__dev">
+                                <div id="pamount.g1-1424i1-5482" data-amount_orig="3.50" class="dev__one">
+                                    <p class="one__dev">$2</p> <span class="one__span">$3.50</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--<a id="I0755F07770B6AE0AFF831E57A79FD31859FD49C9B0A2045FB68BDEACF4F746BE" data-item_id="g1-1424i1-5482" data-amount="3.50" data-title="Cheezels Party Bag 190g">-->
+                        <button id="I0755F07770B6AE0AFF831E57A79FD31859FD49C9B0A2045FB68BDEACF4F746BE"
+                                data-item_id="g1-1424i1-5482" data-amount="3.50" data-title="Cheezels Party Bag 190g">
+                            add
+                        </button>
+                        <!--</a>-->
+                    </div>
+
+
+                    <!--dynamic options:-->
+                    <!--options:-->
+                    <!--options.-->
+                    <!--dynamic options.-->
+                </div>
+            </div>
+
+        </div>
+
+        <!--modal:-->
+        <div class="modal micromodal-slide" id="modal-show-qr" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-show-qr-title"
+                     style="width: 50%;">
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-show-qr-title"></h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+                    </header>
+                    <div class="modal__main_wrapper">
+                        <main class="modal__content" id="modal-show-qr-content">
+                            <div style="
+                                 text-align: justify;
+                                 text-justify: inter-word
+                                 ">Please scan this code from within MegaPayWallet app to add the item into local
+                                application basket for secure ordering
+                            </div>
+                            <div class="modal-show-qr-content-img">
+                                <img id="modal-show-qr-img_id" data-bsrc="" src="" onload="console.log(this.alt);">
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal.-->
+    </div>
+</main>
+
+<footer class="contact">
+    <div class="wrapper">
+        <div class="logos">
+            <div class="logos__header">
+                <a href="index.html" target="_blank"><img src="content/custom/IGACashmere/img/logo11.svg"
+                                                          alt="logo"></a>
+            </div>
+            <div class="logos__sheet__headers">
+                <div id="app2" class="menu_slider">
+                    <!--<div @click="activate" id="mySidebar2" class="sidebar__2"></div>-->
+                    <div id="sbar_botbtn" onclick="ShowHide(this)" class="sbar sidebar__2"></div>
+                    <div id="main2">
+                        <!--                        <div @click="activate" target="nav-collapse" class="hamburgerButton">-->
+                        <div onclick="ShowHide(this)" class="sbar hamburgerButton">
+                            <div v-bind:class="{active: isActive}" class="hamburger bar1__1"></div>
+                            <div v-bind:class="{active: isActive}" class="hamburger bar2__2"></div>
+                            <div v-bind:class="{active: isActive}" class="hamburger bar3__3"></div>
+
+                        </div>
+                    </div>
+                    <div id="myShopings2" onclick="ShowHide(this)" class="shcart shoopers__2"></div>
+                    <div id="main__shoop2">
+                        <!--<div @click="activates" target="nav-collapse" class="logos__shopping herth__2">-->
+                        <div id="shcart_botbtn" onclick="ShowHide(this)" class="shcart logos__shopping herth__2">
+                            <img src="content/custom/IGACashmere/img/shoping2.svg" alt="shoping">
+                            <div id="zindex__1" class="zindex"><p>0</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="contacts__contacted">
+                <div class="contacted__us">
+                    <p>Contact us</p>
+                </div>
+                <div class="contacted__sites">
+                    <p>1 Warra Ln, Cashmere QLD 4500<br>
+                        (07) 3882 3080<br>
+                        <a href="igacashmere-7.html" target="_blank">https://tp.megapaypro.com/IGACashmere</a>
+                    </p>
+                </div>
+            </div>
+            <div class="contacts__payment">
+                <div class="payment__megapay">
+                    <p>For the best payment experience get the MegaPay app</p>
+                </div>
+                <div class="payment__google">
+                    <a href="" target="_blank"><img src="content/custom/IGACashmere/img/google.png" alt="google"></a>
+                    <a href="" target="_blank"><img src="content/custom/IGACashmere/img/apple.png" alt="apple"></a>
+                </div>
+                <div class="payment__mega">
+                    <p>&copy; 2020 MegaPayPro</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="message_html_ParentDiv" class="alertBoxParentDiv">
+</div>
+<link rel="stylesheet" href="content/default/_common/addon/micromodal/micromodal.css">
+<script type="text/javascript" src="content/default/_common/addon/micromodal/micromodal.min.js"></script>
+<script type="text/javascript">
+    const mppHref = '<a style="font-weight: bold" href="https://m.me/Megapay.com.au"><p>Report this via FaceBook.</p></a>';
+    const gv = new Object();
+    gv.currOrig = "AUD";
+    gv.host = "https://tp.megapaypro.com:443/igacashmere";
+    gv.url_add_item = gv.host + '?cmd=addItem&key=b4f1a7ced800ede766dfc8cbcd3eeca2ec866983060ed60866964662cdee45c1';
+    gv.url_get_cart = gv.host + '?location=basket&action=getItems4cartSlider&key=b4f1a7ced800ede766dfc8cbcd3eeca2ec866983060ed60866964662cdee45c1';
+    gv.url_clear_cart = gv.host + '?location=basket&action=delAllItems&key=b4f1a7ced800ede766dfc8cbcd3eeca2ec866983060ed60866964662cdee45c1';
+    gv.url_clear_cart_item = gv.host + '?location=basket&action=delItem&key=b4f1a7ced800ede766dfc8cbcd3eeca2ec866983060ed60866964662cdee45c1';
+    gv.url_ma_status = gv.host + '?cmd=aj_ma_status&key=b4f1a7ced800ede766dfc8cbcd3eeca2ec866983060ed60866964662cdee45c1';
+    gv.mah = "5E47560B58ADF5B0B0298E911D3FF0BC8867B735B59030A12355058D07A3D330";
+    gv.ma_name = "IGA Cashmere";
+
+    gv.fhandler = "";
+    gv.time_m_is_open = '["06:30","19:30","06:30","19:30","06:30","19:30","06:30","19:30","06:30","19:30","06:30","19:30","06:30","19:30"]';
+
+    var ShowHide_shcart_timeout;
+
+    function put2basket(o, ajax, checkHasOption) {
+        if (ajax === undefined) {
+            ajax = false;
+        }
+        if (checkHasOption === undefined) {
+            checkHasOption = true;
+        }
+        if (o !== undefined) {
+            var ItemID = o.id;
+            if (ajax) {
+                if (gv.fhandler === "javascript:Add2WWWBasket") {
+                    console.log("call " + gv.fhandler);
+                    if (ItemHashOptions(o) && checkHasOption === true) {
+                        showOptions(o);
+                    } else {
+                        (encodeURIComponent(JSON.stringify(getSelectedOptions(o))), ItemID, o, checkHasOption);
+                    }
+                } else {
+                    console.log(gv.fhandler + " === window.webkit.messageHandlers.mpp_add.postMessage ???");
+                    console.log("getSelectedOptions_opm(o)=" + getSelectedOptions(o));
+                    if (gv.fhandler === "window.webkit.messageHandlers.mpp_add.postMessage" && getSelectedOptions(o) === null) {
+                        console.log("no options selected. Stop for iOs now.");
+                    } else {
+                        (encodeURIComponent(JSON.stringify(getSelectedOptions(o))), ItemID);
+                    }
+                }
+            }
+        } else {
+            alert("Document has bad structure. Please inform developer.");
+        }
+    }
+</script>
+<script type="text/javascript" src="content/default/_common/js/v2.main.min-b.js"></script>
+<script type="text/javascript" src="content/default/default/js/v2.main.min.js"></script>
+<script type="text/javascript" src="content/default/default/js/v2.ma.status.js"></script>
+<!--body.-->
+
+<div id="msg_Alert" class="alertBoxParentDiv" style="display: none;">
+    <div id="msg_Alert_cl" class="alertBox warning">
+        <div class="alert_msg_container">
+            <span class="closebtn"
+                  onclick="document.getElementById('msg_Alert').style.display = 'none';">&#x2715;</span>
+        </div>
+        <br>
+        <span id="msg_Alert_BODY"></span>
+    </div>
+</div>
+
+<script>
+    $("#shcart_pay").click(function () {
+        DoSubmit('#CartPayF', 'Payment');
+    });
+
+    $(document).ready(function () {
+        console.log("document loaded");
+//                doSlideshow();
+    });
+
+    $(window).on("load", function () {
+        getBasketContent();
+        console.log("window loaded");
+
+        if (typeof DoValidator === "function") {
+            //prepare to pay page
+            DoValidator();
+        }
+        if (typeof getMAStatus === "function") {
+            getMAStatus();
+        }
+
+    });
+</script>
+<div id="bodyCanvasNav" class="bodyCanvasNav_overlay" onclick="ShowHide_shcart()" style="width: 0%; opacity: 0;">
+    <div id="bodyCanvasNav_msg" class="msg"></div>
+</div>
+</body>
+</html>

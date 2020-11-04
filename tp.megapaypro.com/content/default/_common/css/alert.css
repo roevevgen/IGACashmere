@@ -1,0 +1,137 @@
+/*alertBox*/
+.alertBoxParentDiv{
+    display: inline-block;
+    position: fixed;
+    min-width: 50%;
+    z-index:100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.alertBoxParentDiv h1{
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+.alertBox {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    font-size: 16px;
+
+    left: 50%;
+    top: 50%;
+}
+
+.alertBoxParentDivDlvr{
+    /*position: absolute;*/
+    position: fixed;
+    display: inline-block;
+    /*min-width: 400px;*/
+    min-width: 70%;
+    z-index:100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/*.alertBox {
+    max-width: 80%;
+    max-width: 500px;
+    max-width: 80%;
+    background: #f0f0f0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    font-size: 16px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}*/
+.altert_txt_blink {
+    animation: blinker .6s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+}
+
+.alertBox.success {background-color: #4CAF50;}
+.alertBox.info {background-color: #2196F3;}
+.alertBox.warning {background-color: #ff9800;color: #444;}
+
+.closebtn {
+    display: block;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: #444;
+}
+.alertBox:hover {
+    opacity: 1;
+}
+.alert_msg_container{}
+/*alertBox*/
+
+
+/*display working hours*/
+@keyframes blinker {
+    0% {        opacity: 0.95;    }
+    25% {        opacity: 0.85;    }
+    50% {        opacity: 0.75;    }
+    75% {        opacity: 0.1;    }
+}
+.boxOffTime, .boxMAState{
+    /*max-width: 500px;*/
+    /*background: white;*/
+    text-align: center;
+    animation: blinker 2s linear infinite;
+
+    /*position: -webkit-sticky;  Safari */
+    /*position: sticky;*/
+    /*top: 0;*/
+
+    /*-webkit-border-radius: 10px;*/
+    /*-moz-border-radius: 10px;*/
+    /*border-radius: 10px;*/
+
+    /*border: 2px solid orange;*/
+    padding: 4px 12px 4px 12px;
+    background-color: red;
+
+    /*color: white;*/
+    /*            opacity: 0.8;
+                transition: opacity 0.6s;*/
+    /*margin-bottom: 15px;*/
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    /*background-color: #f44336;*/
+    /*text-shadow: -1px -1px 1px #f44336, 2px 2px 1px #f44336;*/
+
+    /*    -webkit-animation: neon3 .5s ease-in-out infinite alternate;
+        -moz-animation: neon3 .5s ease-in-out infinite alternate;
+        animation: neon3 .5s ease-in-out infinite alternate;*/
+    margin-bottom: 1px;
+}
+/*display working hours*/
+
